@@ -31,7 +31,6 @@
 <style scoped lang="less">
 	.container {
 		padding-bottom: 50px;
-		font-family: PingFangSC-Regular, PingFang SC;
 	}
 
 	.nav {
@@ -45,7 +44,7 @@
 		align-items: center;
 		background-color: #fff;
 		box-shadow: 0 -1px 0.5px rgba(51, 51, 51, .16);
-		
+
 		.navItem {
 			flex: 1;
 			justify-content: center;
@@ -54,78 +53,75 @@
 			flex-direction: column;
 			align-items: center;
 			height: 100%;
-			
+
 			.navIcon {
 				width: 26px;
 				height: 26px;
 				margin-bottom: 2px;
 			}
-			
-			&:nth-child(1){
-				.navIcon{
+
+			&:nth-child(1) {
+				.navIcon {
 					background: #fff url('../static/home.png') center center no-repeat;
 					background-size: 26px 26px;
 				}
-				
-				&.router-link-exact-active{
-					.navIcon{
+
+				&.router-link-exact-active {
+					.navIcon {
 						background: #fff url('../static/home_selected.png') center center no-repeat;
 						background-size: 26px 26px;
 					}
 				}
 			}
-			
-			&:nth-child(2){
-				.navIcon{
+
+			&:nth-child(2) {
+				.navIcon {
 					background: #fff url('../static/community.png') center center no-repeat;
 					background-size: 26px 26px;
 				}
-				
-				&.router-link-exact-active{
-					.navIcon{
+
+				&.router-link-exact-active {
+					.navIcon {
 						background: #fff url('../static/community_selected.png') center center no-repeat;
 						background-size: 26px 26px;
 					}
 				}
 			}
-			
-			&:nth-child(3){
-				.navIcon{
+
+			&:nth-child(3) {
+				.navIcon {
 					background: #fff url('../static/mall.png') center center no-repeat;
 					background-size: 26px 26px;
 				}
-				
-				&.router-link-exact-active{
-					.navIcon{
+
+				&.router-link-exact-active {
+					.navIcon {
 						background: #fff url('../static/mall_selected.png') center center no-repeat;
 						background-size: 26px 26px;
 					}
 				}
 			}
-			
-			&:nth-child(4){
-				.navIcon{
+
+			&:nth-child(4) {
+				.navIcon {
 					background: #fff url('../static/myHealth.png') center center no-repeat;
 					background-size: 26px 26px;
 				}
-				
-				&.router-link-exact-active{
-					.navIcon{
+
+				&.router-link-exact-active {
+					.navIcon {
 						background: #fff url('../static/myHealth_selected.png') center center no-repeat;
 						background-size: 26px 26px;
 					}
 				}
 			}
-			
+
 			span {
 				font-size: 10px;
 				font-family: PingFangSC-Regular, PingFang SC;
-				color: rgba(51,51,51,.6);
+				color: rgba(51, 51, 51, .6);
 				line-height: 12px;
 			}
 		}
 	}
-
-	
-	
 </style>
