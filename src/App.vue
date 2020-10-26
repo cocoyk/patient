@@ -31,6 +31,7 @@
 <style scoped lang="less">
 	.container {
 		padding-bottom: 50px;
+		font-family: PingFangSC-Regular, PingFang SC;
 	}
 
 	.nav {
