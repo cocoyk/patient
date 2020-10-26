@@ -9,6 +9,8 @@
 		<!-- 分享 -->
 		<ShareList></ShareList>
 		
+		<!-- 精选 -->
+		<Featured></Featured>
 		
 		<!-- 关注推荐 -->
 		<Recommend></Recommend>
@@ -21,6 +23,7 @@
 	import Evaluation from './evaluation.vue';
 	import ShareList from './shareList.vue';
 	import Recommend from './recommend.vue';
+	import Featured from './featured.vue';
 	
 	export default {
 		components:{
@@ -28,6 +31,7 @@
 			Evaluation,
 			ShareList,
 			Recommend,
+			Featured,
 		}
 	}
 </script>

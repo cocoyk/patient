@@ -1,16 +1,18 @@
 <template>
 	<div class="recommendList">
-		<div v-for="(item,index) in items" :key="index" class="item">
-			<div class="close">
-				<img :src="require('../../../static/close.png')" alt=""/>
+		<div class="items">
+			<div v-for="(item,index) in items" :key="index" class="item">
+				<div class="close">
+					<img :src="require('../../../static/close.png')" alt="" />
+				</div>
+				<img class="avatar" :src="require('../../../static/doctor.png')" alt="" />
+				<p>{{item.label}}</p>
+				<span class="sub">{{item.sub}}</span>
+				<button class="btn">
+					<div class="icon"></div>
+					<span>关注</span>
+				</button>
 			</div>
-			<img class="avatar" :src="require('../../../static/doctor.png')" alt="" />
-			<p>{{item.label}}</p>
-			<span class="sub">{{item.sub}}</span>
-			<button class="btn">
-				<div class="icon"></div>
-				<span>关注</span>
-			</button>
 		</div>
 	</div>
 </template>
@@ -68,10 +70,15 @@
 <style scoped lang="less">
 	.recommendList {
 		padding: 16px;
-		display: flex;
 		overflow-x: scroll;
 		background-color: #fff;
 		margin-bottom: 8px;
+
+		.items {
+			display: inline-flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 
 		.item {
 			width: 168px;
@@ -87,19 +94,19 @@
 			position: relative;
 			flex-shrink: 0;
 
-			margin-right: 8px;
-			// &:not(:last-child) {
-			// 	margin-right: 8px;
-			// }
-			
-			.close{
+			&:not(:last-child) {
+				margin-right: 8px;
+			}
+
+			.close {
 				width: 25px;
 				height: 25px;
 				padding: 7px;
 				position: absolute;
 				right: 0;
 				top: 0;
-				img{
+
+				img {
 					width: 11px;
 					height: 11px;
 					display: block;
@@ -140,7 +147,8 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				&:focus{
+
+				&:focus {
 					outline: 0;
 				}
 
