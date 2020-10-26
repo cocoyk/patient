@@ -5,7 +5,7 @@ import 'amfe-flexible';
 import './assets/styles/reset.css';
 import less from 'less';
 
-import router from './router/index.js';
+import router from './router.js';
 
 Vue.config.productionTip = false;
 Vue.use(less);

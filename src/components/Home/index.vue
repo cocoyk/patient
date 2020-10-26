@@ -150,7 +150,6 @@
 			}
 
 			input {
-				color: rgba(51, 51, 51, .4);
 				font-size: 16px;
 				height: 26px;
 				flex: 1;
@@ -158,6 +157,7 @@
 				padding: 0;
 				border: 0;
 				color: #333;
+				caret-color:@color;
 
 				&:focus {
 					outline: 0;
@@ -203,7 +203,7 @@
 
 				span {
 					font-size: 14px;
-					color: #44CC77;
+					color: @color;
 					font-family: PingFangSC-Regular, PingFang SC;
 				}
 			}
@@ -342,7 +342,7 @@
 				font-size: 14px;
 				color: #fff;
 
-				background: linear-gradient(180deg, #48D699 0%, #44CC77 100%);
+				background: linear-gradient(180deg, #48D699 0%,@color 100%);
 				box-shadow: 0px 4px 8px -4px rgba(68, 204, 119, 0.48);
 
 				border: none;
@@ -378,12 +378,12 @@
 			&.active {
 
 				p {
-					color: #44CC77;
+					color: @color;
 				}
 
 				span {
 					color: #fff;
-					background-color: #44CC77;
+					background-color: @color;
 				}
 			}
 		}
