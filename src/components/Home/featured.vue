@@ -50,7 +50,7 @@
 						<div class="img recommend8"></div>
 						<span>{{it.text}}</span>
 					</div>
-					<div class="main">
+					<div class="main" :class="{one:item.lists.length===1,more:item.lists.length>1}">
 						<p>{{it.content}}</p>
 						<span>{{it.sub}}</span>
 					</div>
@@ -462,10 +462,10 @@
 					}
 
 					.main {
+						//width: 0;
 						flex: 1;
 						display: flex;
 						flex-direction: column;
-						width: 0;
 
 						p {
 							font-size: 12px;
@@ -489,6 +489,18 @@
 							overflow: hidden;
 							text-overflow: ellipsis;
 							white-space: nowrap;
+						}
+
+						&.one{
+							p,span{
+								width: calc(100vw - 90px);
+							}
+						}
+
+						&.more{
+							p,span{
+								width: calc(50vw - 83px);
+							}
 						}
 					}
 
@@ -532,6 +544,7 @@
 							img {
 								width: 100%;
 								height: 100%;
+								vertical-align: top;
 							}
 						}
 

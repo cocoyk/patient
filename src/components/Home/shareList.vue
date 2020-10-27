@@ -172,6 +172,7 @@
 				border-radius: 8px;
 				padding: 16px 8px;
 				display: flex;
+				align-items: center;
 			
 				.img {
 					width: 48px;
@@ -213,6 +214,8 @@
 					.name {
 						flex: 1;
 						margin-bottom: 2px;
+						display: flex;
+						align-items: baseline;
 						.shareName {
 							font-size: 18px;
 							font-family: PingFangSC-Medium, PingFang SC;
@@ -273,6 +276,7 @@
 							img{
 								width: 100%;
 								height: 100%;
+								vertical-align: top;
 							}
 						}
 						span{

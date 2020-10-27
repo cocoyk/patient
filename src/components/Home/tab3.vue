@@ -1,5 +1,5 @@
 <template>
-	<h3>精选</h3>
+	<h3 style="text-align: center;margin-top: 20px;">精选</h3>
 </template>
 
 <script>

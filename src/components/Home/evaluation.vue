@@ -26,10 +26,10 @@
 			<div class="doctorBox">
 				<img :src="require('../../../static/doctor.png')" alt="" />
 				<div class="doctorInfo">
-					<div class="name">
+					<p class="name">
 						<span class="doctorName">{{item.doctorName}}</span>
 						<span class="position">{{item.position}}</span>
-					</div>
+					</p>
 					<span class="hospital">{{item.hospital}}</span>
 				</div>
 			</div>
@@ -182,6 +182,7 @@
 			border-radius: 8px;
 			padding: 16px 8px;
 			display: flex;
+			align-items: center;
 
 			img {
 				width: 48px;
@@ -193,16 +194,19 @@
 				flex: 1;
 				display: flex;
 				flex-direction: column;
+				align-items: baseline;
 
 				.name {
 					flex: 1;
 					margin-bottom: 2px;
+					display: flex;
 
 					.doctorName {
 						font-size: 18px;
 						font-family: PingFangSC-Medium, PingFang SC;
 						font-weight: 500;
 						color: #333333;
+						height: 26px;
 						line-height: 26px;
 						margin-right: 8px;
 					}

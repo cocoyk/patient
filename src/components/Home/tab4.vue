@@ -1,5 +1,5 @@
 <template>
-	<h3>糖尿病</h3>
+	<h3 style="text-align: center;margin-top: 20px;">糖尿病</h3>
 </template>
 
 <script>

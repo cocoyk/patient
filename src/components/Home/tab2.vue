@@ -1,5 +1,5 @@
 <template>
-	<h3>关注</h3>
+	<h3 style="text-align: center;margin-top: 20px;">关注</h3>
 </template>
 
 <script>
@@ -10,5 +10,6 @@
 	}
 </script>
 
-<style>
+<style scoped lang="less">
+	
 </style>
