@@ -200,6 +200,7 @@
 					flex: 1;
 					margin-bottom: 2px;
 					display: flex;
+					align-items: baseline;
 
 					.doctorName {
 						font-size: 18px;
