@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div class="container" :class="{iphonex:isIphonex}">
 		<router-view></router-view>
 		<nav class="nav">
 			<router-link to="/" class="navItem">
@@ -22,9 +22,13 @@
 	</div>
 </template>
 <script>
+	import {isIphonex} from './utils/userAgent.js';
+	
 	export default {
 		data() {
-			return {}
+			return {
+				isIphonex:isIphonex,
+			}
 		}
 	}
 </script>
@@ -32,6 +36,13 @@
 	.container {
 		min-height: 100vh;
 		padding-bottom: 50px;
+		&.iphonex{
+			padding-bottom: 83px;
+		}
+		.nav{
+			height: 83px;
+			padding-bottom: 33px;
+		}
 	}
 
 	.nav {
