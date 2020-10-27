@@ -16,7 +16,10 @@
 			<p class="msg">{{item.msg}}</p>
 			
 			<div class="doctorBox">
-				<img :src="require('../../../static/doctor.png')" alt="" />
+				<div class="img" :class="{man:item.shareSex===0,woman:item.shareSex===1}">
+					<img :src="require('../../../static/doctor.png')" alt="" />
+					<div class="sexIcon"></div>
+				</div>
 				<div class="doctorInfo">
 					<div class="name">
 						<span class="shareName">{{item.shareName}}</span>
@@ -60,6 +63,7 @@
 					shareName:'陈吉相',
 					shareNameSub:'主任医师',
 					shareText:'神经科｜华中科技大学附属协和医院',
+					shareSex:0,
 					date:'3-31',
 					
 					tag:['帕金森','帕金森'],
@@ -76,6 +80,7 @@
 					shareName:'吴敏霞',
 					shareNameSub:'',
 					shareText:'63 岁 帕金森 II期 2 年',
+					shareSex:1,
 					date:'3-31',
 					
 					tag:['帕金森','帕金森'],
@@ -168,10 +173,36 @@
 				padding: 16px 8px;
 				display: flex;
 			
-				img {
+				.img {
 					width: 48px;
 					height: 48px;
 					margin-right: 8px;
+					position: relative;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+					.sexIcon{
+						width: 16px;
+						height: 16px;
+						position: absolute;
+						right: 0;
+						bottom: 0;
+					}
+					&.man{
+						.sexIcon{
+							background: url('../../../static/man.png') no-repeat;
+							background-size: contain;
+						}
+						
+					}
+					&.woman{
+						.sexIcon{
+							background: url('../../../static/woman.png') no-repeat;
+							background-size: contain;
+						}
+						
+					}
 				}
 			
 				.doctorInfo {
@@ -214,7 +245,6 @@
 			.footer{
 				display: flex;
 				margin-top: 9px;
-				align-items: center;
 				.tag{
 					flex: 1;
 					display: flex;
@@ -228,6 +258,7 @@
 						display: flex;
 						align-items: center;
 						margin-bottom: 8px;
+						min-width: 70px;
 						
 						&:not(:last-child){
 							margin-right: 9px;
@@ -250,6 +281,8 @@
 							font-weight: 400;
 							color: #CFA972;
 							line-height: 16px;
+							flex: 1;
+							text-align: center;
 						}
 					}
 				}
@@ -260,6 +293,8 @@
 					color: rgba(51,51,51,.6);
 					line-height: 16px;
 					text-align: right;
+					width: 100px;
+					margin-top: 3px;
 				}
 			}
 			

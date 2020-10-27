@@ -30,11 +30,13 @@
 </script>
 <style scoped lang="less">
 	.container {
+		min-height: 100vh;
 		padding-bottom: 50px;
 	}
 
 	.nav {
 		position: fixed;
+		z-index: 100;
 		left: 0;
 		bottom: 0;
 		width: 100%;

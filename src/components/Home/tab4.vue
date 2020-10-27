@@ -1,5 +1,5 @@
 <template>
-	<h3>444</h3>
+	<h3>糖尿病</h3>
 </template>
 
 <script>

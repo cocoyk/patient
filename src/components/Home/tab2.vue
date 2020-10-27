@@ -1,5 +1,5 @@
 <template>
-	<h3>222</h3>
+	<h3>关注</h3>
 </template>
 
 <script>

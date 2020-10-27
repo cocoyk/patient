@@ -1,5 +1,5 @@
 <template>
-	<h3>333</h3>
+	<h3>精选</h3>
 </template>
 
 <script>
